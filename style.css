@@ -422,4 +422,76 @@ body {
   grid-area: portfolio5;
 }
 
+.experiences {
+  padding: 85px 0;
+  background: #111827;
+}
+@media (max-width: 768px) {
+  .experiences {
+    padding: 60px 0;
+  }
+}
+.experiences__title {
+  color: #f3f4f6;
+  font-family: "Arvo", serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 64px;
+  margin-bottom: 24px;
+}
+.experiences__title span {
+  color: #eab308;
+}
+.experiences__desc {
+  color: #9ca3af;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  max-width: 730px;
+  margin-bottom: 80px;
+}
+.experiences .experiences-list {
+  display: grid;
+  grid-template-columns: 33% 29% 33%;
+  gap: 29px;
+}
+@media (max-width: 768px) {
+  .experiences .experiences-list {
+    grid-template-columns: 1fr;
+  }
+}
+.experiences .experiences-item {
+  padding: 32px;
+  background: #020617;
+  border-radius: 12px;
+}
+.experiences .experiences-item__date {
+  color: #d1d5db;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 8px;
+}
+.experiences .experiences-item__role {
+  color: #eab308;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 41px;
+  margin-bottom: 4px;
+}
+.experiences .experiences-item__title {
+  color: #d1d5db;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px;
+  margin-bottom: 16px;
+}
+.experiences .experiences-item__desc {
+  color: #6b7280;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 8px;
+}
+
 /*# sourceMappingURL=style.css.map */
