@@ -1,0 +1,75 @@
+.portfolio {
+  padding: 96px 0;
+  @include tablet-small {
+    padding: 60px 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    color: $color-name;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 24px;
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &__desc {
+    color: $header-link;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    max-width: 461px;
+    margin-bottom: 80px;
+  }
+
+  &__projects {
+    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "portfolio1 portfolio1 portfolio2 portfolio3"
+      "portfolio1 portfolio1 portfolio4 portfolio5";
+    @include tablet-small {
+      grid-template-columns: auto;
+      grid-template-areas:
+        "portfolio1"
+        "portfolio2"
+        "portfolio3"
+        "portfolio4"
+        "portfolio5";
+    }
+  }
+
+  &__img {
+    &_1 {
+      grid-area: portfolio1;
+    }
+
+    &_2 {
+      grid-area: portfolio2;
+    }
+
+    &_3 {
+      grid-area: portfolio3;
+    }
+
+    &_4 {
+      grid-area: portfolio4;
+    }
+
+    &_5 {
+      grid-area: portfolio5;
+    }
+  }
+}
