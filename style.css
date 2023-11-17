@@ -442,6 +442,11 @@ body {
 .experiences__title span {
   color: #eab308;
 }
+@media (max-width: 576px) {
+  .experiences__title {
+    font-size: 35px;
+  }
+}
 .experiences__desc {
   color: #9ca3af;
   font-size: 16px;
