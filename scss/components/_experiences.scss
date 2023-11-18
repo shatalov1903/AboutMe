@@ -36,6 +36,15 @@
     @include tablet-small {
       grid-template-columns: 1fr;
     }
+
+    &__a {
+      @include tablet-min {
+        transition: $transition;
+        &:hover {
+          transform: translateY(-10px);
+        }
+      }
+    }
   }
 
   .experiences-item {
@@ -64,7 +73,7 @@
       font-size: 16px;
       font-weight: 700;
       line-height: 27px;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
     }
 
     &__desc {

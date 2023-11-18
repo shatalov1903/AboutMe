@@ -33,4 +33,13 @@
     align-items: center;
     gap: 16px;
   }
+
+  &__a {
+    @include tablet-min {
+      transition: $transition;
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
 }

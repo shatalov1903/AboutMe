@@ -41,6 +41,12 @@
     align-items: center;
     background: $body-bg;
     border-radius: 12px;
+    @include tablet-min {
+      transition: $transition;
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
 
     &__img {
       width: 40px;

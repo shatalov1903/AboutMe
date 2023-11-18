@@ -14,6 +14,10 @@ img {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lexend Deca", sans-serif;
   background: #020617;
@@ -40,8 +44,10 @@ body {
   line-height: 27px;
   transition: 0.2s all ease-in-out;
 }
-.btn:hover {
-  background: #fbd747;
+@media (min-width: 992px) {
+  .btn:hover {
+    background: #fbd747;
+  }
 }
 
 .header {
@@ -205,10 +211,16 @@ body {
   display: flex;
   flex-shrink: 0;
   position: relative;
+  padding-left: 35px;
 }
 @media (max-width: 768px) {
   .about__img {
     flex-shrink: inherit;
+  }
+}
+@media (max-width: 576px) {
+  .about__img {
+    padding: 0;
   }
 }
 .about__img-main {
@@ -225,6 +237,12 @@ body {
   position: absolute;
   top: 10px;
   right: 35px;
+  max-width: 475px;
+}
+@media (max-width: 576px) {
+  .about__img-backdrop {
+    right: 20px;
+  }
 }
 .about__title {
   color: #f3f4f6;
@@ -303,6 +321,14 @@ body {
   background: #020617;
   border-radius: 12px;
 }
+@media (min-width: 992px) {
+  .service .service-item {
+    transition: 0.2s all ease-in-out;
+  }
+  .service .service-item:hover {
+    transform: translateY(-10px);
+  }
+}
 .service .service-item__img {
   width: 40px;
   height: 40px;
@@ -359,6 +385,14 @@ body {
   align-items: center;
   gap: 16px;
 }
+@media (min-width: 992px) {
+  .footer__a {
+    transition: 0.2s all ease-in-out;
+  }
+  .footer__a:hover {
+    transform: translateY(-5px);
+  }
+}
 
 .portfolio {
   padding: 96px 0;
@@ -402,8 +436,16 @@ body {
 }
 @media (max-width: 768px) {
   .portfolio__projects {
-    grid-template-columns: auto;
-    grid-template-areas: "portfolio1" "portfolio2" "portfolio3" "portfolio4" "portfolio5";
+    grid-template-columns: auto auto;
+    grid-template-areas: "portfolio1 portfolio1" "portfolio2 portfolio3" "portfolio4 portfolio5";
+  }
+}
+@media (min-width: 992px) {
+  .portfolio__img {
+    transition: 0.2s all ease-in-out;
+  }
+  .portfolio__img:hover {
+    transform: translateY(-10px);
   }
 }
 .portfolio__img_1 {
@@ -465,6 +507,14 @@ body {
     grid-template-columns: 1fr;
   }
 }
+@media (min-width: 992px) {
+  .experiences .experiences-list__a {
+    transition: 0.2s all ease-in-out;
+  }
+  .experiences .experiences-list__a:hover {
+    transform: translateY(-10px);
+  }
+}
 .experiences .experiences-item {
   padding: 32px;
   background: #020617;
@@ -489,7 +539,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 27px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .experiences .experiences-item__desc {
   color: #6b7280;

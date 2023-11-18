@@ -41,17 +41,22 @@
       "portfolio1 portfolio1 portfolio2 portfolio3"
       "portfolio1 portfolio1 portfolio4 portfolio5";
     @include tablet-small {
-      grid-template-columns: auto;
+      grid-template-columns: auto auto;
       grid-template-areas:
-        "portfolio1"
-        "portfolio2"
-        "portfolio3"
-        "portfolio4"
-        "portfolio5";
+        "portfolio1 portfolio1"
+        "portfolio2 portfolio3"
+        "portfolio4 portfolio5";
     }
   }
 
   &__img {
+    @include tablet-min {
+      transition: $transition;
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
+
     &_1 {
       grid-area: portfolio1;
     }

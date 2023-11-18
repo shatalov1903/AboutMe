@@ -21,8 +21,12 @@
     display: flex;
     flex-shrink: 0;
     position: relative;
+    padding-left: 35px;
     @include tablet-small {
       flex-shrink: inherit;
+    }
+    @include mobile {
+      padding: 0;
     }
   }
 
@@ -39,6 +43,10 @@
     position: absolute;
     top: 10px;
     right: 35px;
+    max-width: 475px;
+    @include mobile {
+      right: 20px;
+    }
   }
 
   &__title {
