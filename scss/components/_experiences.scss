@@ -8,15 +8,12 @@
   &__title {
     color: $color-name;
     font-family: $ff-reserve;
-    font-size: 42px;
+    font-size: 42rem;
     font-weight: 700;
     line-height: 64px;
     margin-bottom: 24px;
     span {
       color: $primary-color;
-    }
-    @include mobile {
-      font-size: 35px;
     }
   }
 
@@ -62,7 +59,7 @@
 
     &__role {
       color: $primary-color;
-      font-size: 26px;
+      font-size: 26rem;
       font-weight: 700;
       line-height: 41px;
       margin-bottom: 4px;

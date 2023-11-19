@@ -15,7 +15,13 @@ img {
 }
 
 html {
+  font-size: 1px;
   scroll-behavior: smooth;
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 0.8px;
+  }
 }
 
 body {
@@ -161,7 +167,7 @@ body {
 }
 .welcome__name {
   color: #f3f4f6;
-  font-size: 42px;
+  font-size: 42rem;
   font-weight: 700;
   line-height: 64px;
   margin-bottom: 8px;
@@ -246,7 +252,7 @@ body {
 }
 .about__title {
   color: #f3f4f6;
-  font-size: 42px;
+  font-size: 42rem;
   font-weight: 700;
   line-height: 64px;
   margin-bottom: 32px;
@@ -287,7 +293,7 @@ body {
 }
 .service__title {
   color: #f3f4f6;
-  font-size: 42px;
+  font-size: 42rem;
   font-weight: 700;
   line-height: 64px;
   margin-bottom: 24px;
@@ -337,7 +343,7 @@ body {
 .service .service-item__title {
   color: #f3f4f6;
   text-align: center;
-  font-size: 26px;
+  font-size: 26rem;
   font-weight: 700;
   line-height: 41px;
   max-width: 204px;
@@ -362,19 +368,14 @@ body {
 .footer__title {
   color: #fff;
   text-align: center;
-  font-size: 40px;
+  font-size: 40rem;
   font-weight: 700;
   margin-bottom: 24px;
-}
-@media (max-width: 768px) {
-  .footer__title {
-    font-size: 30px;
-  }
 }
 .footer__desc {
   color: #9ca3af;
   text-align: center;
-  font-size: 16px;
+  font-size: 16rem;
   font-weight: 400;
   line-height: 27px;
   max-width: 685px;
@@ -410,7 +411,7 @@ body {
 .portfolio__title {
   color: #f3f4f6;
   text-align: center;
-  font-size: 42px;
+  font-size: 42rem;
   font-weight: 700;
   line-height: 64px;
   margin-bottom: 24px;
@@ -476,18 +477,13 @@ body {
 .experiences__title {
   color: #f3f4f6;
   font-family: "Arvo", serif;
-  font-size: 42px;
+  font-size: 42rem;
   font-weight: 700;
   line-height: 64px;
   margin-bottom: 24px;
 }
 .experiences__title span {
   color: #eab308;
-}
-@media (max-width: 576px) {
-  .experiences__title {
-    font-size: 35px;
-  }
 }
 .experiences__desc {
   color: #9ca3af;
@@ -529,7 +525,7 @@ body {
 }
 .experiences .experiences-item__role {
   color: #eab308;
-  font-size: 26px;
+  font-size: 26rem;
   font-weight: 700;
   line-height: 41px;
   margin-bottom: 4px;
@@ -565,7 +561,7 @@ body {
 .contact__title {
   color: #f3f4f6;
   text-align: center;
-  font-size: 42px;
+  font-size: 42rem;
   font-weight: 700;
   line-height: 64px;
   margin-bottom: 24px;
@@ -658,6 +654,7 @@ body {
 }
 .contact .contact-form__btn {
   padding: 16px 20px;
+  font-family: Lexend Deca;
 }
 
 /*# sourceMappingURL=style.css.map */

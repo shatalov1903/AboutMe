@@ -10,18 +10,15 @@
   &__title {
     color: $white;
     text-align: center;
-    font-size: 40px;
+    font-size: 40rem;
     font-weight: 700;
     margin-bottom: 24px;
-    @include tablet-small {
-      font-size: 30px;
-    }
   }
 
   &__desc {
     color: $header-link;
     text-align: center;
-    font-size: 16px;
+    font-size: 16rem;
     font-weight: 400;
     line-height: 27px;
     max-width: 685px;

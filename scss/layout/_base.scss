@@ -1,5 +1,9 @@
 html {
+  font-size: 1px;
   scroll-behavior: smooth;
+  @include mobile {
+    font-size: 0.8px;
+  }
 }
 
 body {
