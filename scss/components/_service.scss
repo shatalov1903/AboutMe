@@ -62,6 +62,9 @@
       line-height: 41px;
       max-width: 204px;
       margin-bottom: 16px;
+      @include tablet-small {
+        max-width: 100%;
+      }
     }
 
     &__desc {

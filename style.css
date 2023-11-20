@@ -349,6 +349,11 @@ body {
   max-width: 204px;
   margin-bottom: 16px;
 }
+@media (max-width: 768px) {
+  .service .service-item__title {
+    max-width: 100%;
+  }
+}
 .service .service-item__desc {
   color: #6b7280;
   text-align: center;
